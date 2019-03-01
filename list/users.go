@@ -25,7 +25,7 @@ type User {
 
 // Query schema-struct
 type Query struct {
-	users *[]*User
+	users *[]*User // pointer slice of pointer user, because schema says slice and user can be null
 }
 
 // Schema (set Option: UseFieldResolvers)
